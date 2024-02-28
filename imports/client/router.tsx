@@ -4,7 +4,7 @@ import React from 'react';
 import {createBrowserRouter} from "react-router-dom";
 import type { RouteObject } from "react-router-dom";
 
-const IndexPage = React.lazy(() => import('@/pages/index'));
+const HomePage = React.lazy(() => import('@/pages/home/home'));
 
 // Auth Pages
 const LoginPage = React.lazy(() => import("/imports/client/ui/pages/auth/login"));
@@ -50,10 +50,10 @@ const routes: RouteObject[] = [
   {
     path: "/",
     errorElement: <RootError />,
-    element: <IndexPage />,
+    element: <HomePage />,
     children: [
       {
-        element: <IndexPage />,
+        element: <HomePage />,
         children: [
           {
             path: "news",

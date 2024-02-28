@@ -14,7 +14,7 @@ export const AppThemeToggle = () => {
     {/*  setTheme(theme === "light" ? "dark":"light");*/}
     {/*}} className="fixed left-4 lg:left-auto lg:right-4 bottom-4 text-muted-foreground z-50">*/}
     {/*  {theme === "light" && <Sun />}*/}
-    {/*  {theme === "dark" && <Moon/>}*/}
+    {/*  {theme === "dark" && <Moon />}*/}
     {/*</button>*/}
   </>
 }

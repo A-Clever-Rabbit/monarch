@@ -2,7 +2,7 @@ import React, {ComponentProps} from 'react'
 import {Formik, Field, Form, ErrorMessage} from 'formik'
 import {z} from 'zod'
 import {toFormikValidationSchema} from 'zod-formik-adapter'
-import {FormStatus} from "@/components/lib/form-status";
+import {FormStatus} from "@/lib/form-status";
 
 const LoginSchema = z.object({
   email: z.string().email(),
