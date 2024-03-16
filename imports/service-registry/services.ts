@@ -5,6 +5,7 @@
  */
 import {registerClientActionRepository} from '/imports/repository/client-action/client-action'
 import {registerPermissionRepository} from '/imports/repository/permission/permission'
+import {registerRoleRepository} from '/imports/repository/role/role'
 import {registerSettingsRepository} from '/imports/repository/setting/setting'
 import {registerUserRepository} from '/imports/repository/user/user'
 import {registerCheckPermissionsService} from '/imports/domain/services/permissions/check-permissions'
@@ -21,6 +22,7 @@ const transient = (create: ServiceCreator): ServiceConfig => ({ lifecycle: "per-
 export function register() {
 	container.register(registry["repository/client-action/client-action"], transient(registerClientActionRepository));
 	container.register(registry["repository/permission/permission"], transient(registerPermissionRepository));
+	container.register(registry["repository/role/role"], transient(registerRoleRepository));
 	container.register(registry["repository/setting/setting"], transient(registerSettingsRepository));
 	container.register(registry["repository/user/user"], transient(registerUserRepository));
 	container.register(registry["domain/permissions/check-permissions"], transient(registerCheckPermissionsService));

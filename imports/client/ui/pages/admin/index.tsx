@@ -15,7 +15,7 @@ const AdminIndex = () => {
   useEffect(() => {
     if (!isAdminQuery.isLoading) {
       if (!isAdminQuery.data) {
-        navigate('/orders');
+        navigate('/');
       }
     }
   }, [ isAdminQuery.isLoading ]);

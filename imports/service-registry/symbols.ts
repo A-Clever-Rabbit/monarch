@@ -6,6 +6,7 @@
 export const registry = {
 	"repository/client-action/client-action": Symbol.for("repository/client-action/client-action"),
 	"repository/permission/permission": Symbol.for("repository/permission/permission"),
+	"repository/role/role": Symbol.for("repository/role/role"),
 	"repository/setting/setting": Symbol.for("repository/setting/setting"),
 	"repository/user/user": Symbol.for("repository/user/user"),
 	"domain/permissions/check-permissions": Symbol.for("domain/permissions/check-permissions"),
