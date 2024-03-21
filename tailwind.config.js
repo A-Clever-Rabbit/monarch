@@ -49,6 +49,11 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'monarch-pink': '#FF00DE',
+        'monarch-gold': '#FFC000',
+        'monarch-purple': '#6400B2',
+        'monarch-charcoal': '#151515',
+        'monarch-dark-blue': '#04090f'
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -70,7 +75,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        'sans': ["Acto"]
+        'acto': [ 'ACTO' ],
+        'digital': [ 'digital' ],
       }
     },
   },

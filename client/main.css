@@ -3,7 +3,10 @@
 
 @font-face {
   font-family: 'Acto';
-  src: local('Acto'), url('/public/fonts/Acto-Medium.otf') format('otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/public/fonts/Acto-Medium.otf') format('otf');
 }
 
 @tailwind utilities;

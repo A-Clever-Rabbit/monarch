@@ -19,7 +19,8 @@ const buttonVariants = cva(
         pale:
           "bg-accent text-primary hover:opacity-90",
         bare: "",
-        black: "bg-black text-white hover:opacity-90 disabled:opacity-30 disabled:pointer-events-none"
+        black: "bg-black text-white hover:opacity-90 disabled:opacity-30 disabled:pointer-events-none",
+        white: "bg-white text-black hover:opacity-90 disabled:opacity-30 disabled:pointer-events-none"
       },
       size: {
         default: "h-10 py-2 px-4",
