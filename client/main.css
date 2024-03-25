@@ -1,14 +1,11 @@
-@tailwind base;
-@tailwind components;
-
 @font-face {
   font-family: 'Acto';
-  font-style: normal;
-  font-weight: 400;
   font-display: swap;
-  src: url('/public/fonts/Acto-Medium.otf') format('otf');
+  src: url('/fonts/Acto-Medium.otf') format('otf');
 }
 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 @layer base {
@@ -96,7 +93,7 @@
   }
 
   .background-image.main {
-    background-image: url('/images/Main_Site_Image.jpg');
+    background-image: url('/images/home-page-hero.jpg');
     min-height: 712px;
   }
 }

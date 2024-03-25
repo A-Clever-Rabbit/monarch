@@ -1,18 +1,21 @@
 import React from 'react';
 import LatestNews from '@/features/news/latest-news'
+import Footer from '@/components/footer'
+import Header from '@/components/header'
+import RecentMatchups from '@/features/home/recent-matchups'
+import TeamsList from '@/features/home/teams-list'
 
 const Home = () => {
   return <div>
-    <div className="py-6">
-      Header
-    </div>
+    <Header />
+
     <div className="background-image main">
 
     </div>
 
     <div className="bg-monarch-charcoal">
       <div className="container py-20">
-        <LatestNews/>
+        <LatestNews />
       </div>
     </div>
 
@@ -35,9 +38,9 @@ const Home = () => {
       </div>
     </div>
 
-    {/*<HomepageRecentMatchups />*/}
+    <RecentMatchups />
 
-    {/*<HomepageUpcomingMatches />*/}
+    <TeamsList />
 
     <div className="bg-monarch-charcoal">
       <div className="container mx-auto py-40">
@@ -53,9 +56,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="py-6">
-      Footer
-    </div>
+    <Footer />
   </div>
 };
 
